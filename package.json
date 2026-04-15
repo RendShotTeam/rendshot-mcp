@@ -1,0 +1,28 @@
+{
+  "name": "@rendshot/mcp",
+  "version": "0.3.0",
+  "type": "module",
+  "bin": {
+    "rendshot-mcp": "./dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/server.ts",
+    "test": "vitest run --passWithNoTests",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1",
+    "@rendshot/sdk": "^0.3.0",
+    "zod": "^3"
+  },
+  "devDependencies": {
+    "tsx": "^4",
+    "typescript": "^5",
+    "vitest": "^3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RendShotTeam/rendshot-mcp"
+  }
+}
